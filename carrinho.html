@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styleCarrinho.css">
+    <script defer src="carrinho.js"></script>
+</head>
+<body>
+    <div class="carrinho">
+        <div class="cabecalho-carrinho">
+            <button>
+                <a style="text-decoration: none; color: rgb(145, 49, 49);" href="/menu.html">Voltar</a>
+            </button>
+            <h3>Meu carrinho</h3>
+        </div>
+        <ul>
+            
+        </ul>
+
+        <form>
+            <input required type="text" name="Endereço de entrega" placeholder="Endereço de entrega">
+            <input required type="text" name="numero" placeholder="numero">
+            <input required type="text" name="Complemento" placeholder="Complemento">
+            <input required type="text" name="Cep" placeholder="Cep">
+            <input required type="text" name="Nome_do_cliente" placeholder="Nome do cliente">
+            <input required type="text" name="Nome_do_cliente" placeholder="CPF">
+            <fieldset style="border-color: rgb(145, 49, 49);">
+                <legend style="color: rgb(145, 49, 49);">Escolher forma de pagamento</legend>
+                <input type="radio" id="opcao7" name="opcao3" value="opcao7">
+                <label for="opcao7">Dinheiro</label><br>
+                <input type="radio" id="opcao8" name="opcao3" value="opcao8">
+                <label for="opcao8">Débito</label><br>
+                <input type="radio" id="opcao9" name="opcao3" value="opcao9">
+                <label for="opcao9">Crédito</label><br>
+            </fieldset>
+
+            <button class="finalizar"></button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <img src="/images/peixe.png" alt="Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="/menu.html">menu</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <a href="/carrinho.html"><div class="cart-icon">
+                <img  src="/images/carrinho_compras.png" class="cart-img">
+                <div class="cart-alert">1</div>
+            </div></a>
+        </nav>
+    </header>
+    
+    <section class="produtos">
+        <div class="produto">
+            <img src="/images/tipos-de-peixe-pet.jpg" alt="Produto 1">
+            <h3>Produto 1</h3>
+            <p>Descrição do Produto 1</p>
+            <p>R$ 45,00</p>
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku001', 'Produto 1', 45.00)">
+                Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="/images/tipos-de-peixe-pet.jpg" alt="Produto 2">
+            <h3>Produto 2</h3>
+            <p>Descrição do Produto 2</p>
+            <p>R$ 55,00</p>
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku002', 'Produto 2', 55.00)">
+                Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="/images/tipos-de-peixe-pet.jpg" alt="Produto 3">
+            <h3>Produto 3</h3>
+            <p>Descrição do Produto 3</p>
+            <p>R$ 28,00</p>
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku003', 'Produto 3', 28.00)">
+                Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="/images/tipos-de-peixe-pet.jpg" alt="Produto 4">
+            <h3>Produto 4</h3>
+            <p>Descrição do Produto 4</p>
+            <p>R$ 70,00</p>
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku004', 'Produto 4', 70.00)">
+                Adicionar ao Carrinho</button>
+        </div>
+    </section>
+</body>
+</html>
