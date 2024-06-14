@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     atualizarCarrinho();
     configurarBotoesQuantidade();
+    configurarEventoFinalizar();
 });
 
 function atualizarCarrinho() {
@@ -98,4 +99,31 @@ function removerItemCarrinho(index) {
     carrinho.splice(index, 1);
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
     atualizarCarrinho();
+}
+
+function configurarEventoFinalizar() {
+    const botaoFinalizar = document.querySelector('.finalizar');
+    botaoFinalizar.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        const nomeCliente = document.querySelector('input[name="Nome_do_cliente"]').value;
+        const cpf = document.querySelector('input[name="Cpf_do_cliente"]').value;
+        const endereco = document.querySelector('input[name="Endereço de entrega"]').value;
+        const numero = document.querySelector('input[name="numero"]').value;
+        const complemento = document.querySelector('input[name="Complemento"]').value;
+        const cep = document.querySelector('input[name="Cep"]').value;
+        const formaPagamento = document.querySelector('input[name="opcaoPagamento"]:checked').value;
+
+        const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+        let mensagem = `Olá, gostaria de realizar um pedido:\n`;
+        carrinho.forEach(item => {
+            mensagem += `${item.quantidade} x ${item.nome}\n`;
+        });
+
+        mensagem += `\nDados:\n${nomeCliente} - ${cpf}\n${endereco}, ${numero}, ${complemento}\n${cep}\n\nPagamento:\n${formaPagamento}`;
+
+        const whatsappUrl = `https://wa.me/21990094473?text=${encodeURIComponent(mensagem)}`;
+        window.location.href = whatsappUrl;
+    });
 }

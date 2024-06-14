@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,10 +9,18 @@ body {
 }
 
 .menu {
+    position: fixed;
+    top: 0;
+    width: 100vw;
     background-color: rgb(145, 49, 49);
     display: flex;
     align-items: center;
     padding: 0 15px;
+    transition: top 0.5s ease-in-out;
+}
+
+.menu.hidden {
+    top: -144px;
 }
 
 .menu .logo {
@@ -71,34 +83,40 @@ body {
     font-size: 12px;
 }
 
-
 .promo {
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
     background-color: #f4f4f4;
     flex-wrap: wrap;
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .promo-text {
     flex: 1;
     min-width: 300px;
     max-width: 50%;
-    padding: 10px;
+    padding-left: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(145, 49, 49, 0.5);;
 }
 
 .promo-text h1 {
     font-size: 24px;
-    color: rgb(103, 103, 103);
+    color: rgb(255, 255, 255);
 }
 
 .promo-text p {
     font-size: 18px;
-    color: #666;
+    color: #ffffff;
 }
 
 .promo-image {
+    display: none;
     flex: 1;
     min-width: 300px;
     max-width: 50%;
@@ -110,14 +128,20 @@ body {
     height: auto;
 }
 
+.verMenu {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 10px 0px;
+    margin-bottom: 0.83em;
+}
 
 .verMenu a{
-    background-color:rgb(145, 49, 49) ;
+    background-color:rgb(255, 255, 255) ;
     border-radius: 10px;
-    margin: 0 auto;
     padding: 10px;
     text-decoration: none;
-    color: white;
+    color: rgb(145, 49, 49);
     text-align: center;
     
 }

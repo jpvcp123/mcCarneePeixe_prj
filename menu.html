@@ -6,6 +6,7 @@
     <title>Menu</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <script defer src="menu.js"></script>
 </head>
 <body>
     <header>
@@ -25,35 +26,99 @@
     
     <section class="produtos">
         <div class="produto">
-            <img src="/images/tipos-de-peixe-pet.jpg" alt="Produto 1">
-            <h3>Produto 1</h3>
-            <p>Descrição do Produto 1</p>
-            <p>R$ 45,00</p>
-            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku001', 'Produto 1', 45.00)">
+            <img src="product images/camarão.jpg" alt="Produto 1">
+            <h3>Camarão Cinza M</h3>
+            <p>1 kg</p>
+            <p>R$ 39,90</p>
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku001', 'Camarão Cinza M', 39.90)">
                 Adicionar ao Carrinho</button>
         </div>
         <div class="produto">
-            <img src="/images/tipos-de-peixe-pet.jpg" alt="Produto 2">
-            <h3>Produto 2</h3>
-            <p>Descrição do Produto 2</p>
-            <p>R$ 55,00</p>
-            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku002', 'Produto 2', 55.00)">
+            <img src="product images/camarão.jpg" alt="Produto 2">
+            <h3>Camarão Cinza VM</h3>
+            <p>1 kg</p>
+            <p>R$ 78,00</p>
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku002', 'Camarão Cinza VM', 78.00)">
                 Adicionar ao Carrinho</button>
         </div>
         <div class="produto">
-            <img src="/images/tipos-de-peixe-pet.jpg" alt="Produto 3">
-            <h3>Produto 3</h3>
-            <p>Descrição do Produto 3</p>
+            <img src="product images/camarão alto mar.png" alt="Produto 3">
+            <h3>Camarão VM (alto mar)</h3>
+            <p>1 kg</p>
+            <p>R$ 105,00</p>
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku003', 'Camarão VM (alto mar)', 105.00)">
+                Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="product images/camarão alto mar.png" alt="Produto 4">
+            <h3>Camarão VG (alto mar)</h3>
+            <p>1 kg</p>
+            <p>R$ 140,00</p>
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku004', 'Camarão VG (alto mar)', 140.00)">
+                Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="product images/carne de siri.png" alt="Produto 4">
+            <h3>Carne de Siri</h3>
+            <p>1 kg</p>
+            <p>R$ 27,00</p>
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku005', 'Carne de Siri', 27.00)">
+                Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="product images/filé de sardinha.png" alt="Produto 4">
+            <h3>Filé de sardinha</h3>
+            <p>1 kg</p>
             <p>R$ 28,00</p>
-            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku003', 'Produto 3', 28.00)">
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku006', 'Filé de Sardinha', 28.00)">
                 Adicionar ao Carrinho</button>
         </div>
         <div class="produto">
-            <img src="/images/tipos-de-peixe-pet.jpg" alt="Produto 4">
-            <h3>Produto 4</h3>
-            <p>Descrição do Produto 4</p>
-            <p>R$ 70,00</p>
-            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku004', 'Produto 4', 70.00)">
+            <img src="product images/filé de tilápia.webp" alt="Produto 4">
+            <h3>Filé de Tilápia</h3>
+            <p>1 kg</p>
+            <p>R$ 57,00</p>
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku007', 'Filé de Tilápia', 57.00)">
+                Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="product images/filé de linguado.png" alt="Produto 4">
+            <h3>Filé de Linguado</h3>
+            <p>1 kg</p>
+            <p>R$ 65,00</p>
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku008', 'Filé de Linguado', 65.00)">
+                Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="product images/filé de atum.jpg" alt="Produto 4">
+            <h3>Filé de Atum</h3>
+            <p>1 kg</p>
+            <p>R$ 54,00</p>
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku009', 'Filé de Atum', 54.00)">
+                Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="product images/filé de tamboril.webp" alt="Produto 4">
+            <h3>Filé de Tamboril</h3>
+            <p>1 kg</p>
+            <p>R$ 47,90</p>
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku010', 'Filé de Tamboril', 47.90)">
+                Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="product images/filé de pescadinha.png" alt="Produto 4">
+            <h3>Filé de Pescadinha</h3>
+            <p>1 kg</p>
+            <p>R$ 55,00</p>
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku011', 'Filé de Pescadinha', 55.00)">
+                Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="product images/filé de viola.jpg" alt="Produto 4">
+            <h3>Filé de Viola</h3>
+            <p>1 kg</p>
+            <p>R$ 68,00</p>
+            <button class="btn-adicionar" onclick="adicionarAoCarrinho('sku012', 'Filé de Viola', 68.00)">
                 Adicionar ao Carrinho</button>
         </div>
     </section>
